@@ -1,0 +1,3 @@
+﻿Add-Migration NombreMigracion
+Update-Database
+Remove-Migration
