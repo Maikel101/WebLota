@@ -486,3 +486,45 @@ footer {
         transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Mayor sombra en hover */
     }
+
+/* Estilos del banner */
+
+/*.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.cookie-banner button {
+    background: #007bff;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}*/
+
+.cookie-banner {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+    .cookie-banner a {
+        text-decoration: underline;
+        font-size: 0.9rem;
+    }
+
+#accept-cookies {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+}

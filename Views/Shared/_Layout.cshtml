@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header>
+    <header class="fixed-top bg-white shadow">
 
         <div class="logo">
             <h1>LOTA</h1>
@@ -35,7 +35,7 @@
             </a>
             <a asp-controller="Carrito" asp-action="Index" class="carrito">
                 <img src="~/Images/cesta.png" alt="Carrito" class="carrito">
-                <span id="carrito-count" class="badge bg-danger">0</span>
+                <span id="carrito-count" class="badge bg-danger"></span>
             </a>
             @* <a asp-area="" asp-controller="Carrito" asp-action="Index">
             <img src="~/Images/cesta.png" alt="Carrito" class="carrito">
@@ -43,53 +43,63 @@
         </div>
 
 
-    </header>
+        </header>
 
-    <!-- Main Content -->
-    <main class="container-fluid">
-        @RenderBody()
-    </main>
+        <!-- Main Content -->
+    <main class="container-fluid mt-5">
+            @RenderBody()
+        </main>
 
-    <!--SECCIÓN FOOTER-->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>INFO</h3>
-                <ul>
-                    <li><a href="#">Conócenos</a></li>
-                    <li><a href="#">Cambios y devoluciones</a></li>
-                    <li><a href="#">Cómo cuido mi Lota</a></li>
-                </ul>
+    <!-- Aviso de Cookies -->
+ @*    <div id="cookie-banner" class="cookie-banner">
+        <p>Esta web usa cookies para mejorar la experiencia. <a href="#">Más info</a></p>
+        <button class="btn btn-primary btn-sm" onclick="aceptarCookies()">Aceptar</button>
+    </div> *@
+    <div id="cookie-banner" class="cookie-banner fixed-bottom bg-dark text-white p-3 text-center">
+        <p>Esta página usa cookies para mejorar tu experiencia. <a href="#" class="text-warning">Saber más</a></p>
+        <button id="accept-cookies" class="btn btn-primary btn-sm">Aceptar</button>
+    </div>
+
+        <!--SECCIÓN FOOTER-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>INFO</h3>
+                    <ul>
+                        <li><a href="#">Conócenos</a></li>
+                        <li><a href="#">Cambios y devoluciones</a></li>
+                        <li><a href="#">Cómo cuido mi Lota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>CONTACTO</h3>
+                    <ul>
+                        <li><a href="mailto:bolsoslota@gmail.com">Email</a></li>
+                        <li><a asp-controller="Clientes" asp-action="Create">Formulario de contacto</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>LEGAL</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>CONTACTO</h3>
-                <ul>
-                    <li><a href="mailto:bolsoslota@gmail.com">Email</a></li>
-                    <li><a asp-controller="Clientes" asp-action="Create">Formulario de contacto</a></li>
 
-                </ul>
+            <!-- Pie de página -->
+            <div class="footer-bottom">
+                <p>© 2025 LOTA. Todos los derechos reservados.</p>
             </div>
-            <div class="footer-section">
-                <h3>LEGAL</h3>
-                <ul>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-            </div>
-        </div>
+        </footer>
 
-        <!-- Pie de página -->
-        <div class="footer-bottom">
-            <p>© 2025 LOTA. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

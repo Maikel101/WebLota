@@ -102,3 +102,31 @@ function actualizarCarrito() {
             console.error('Error al actualizar el carrito:', error);
         });
 }
+
+        // Script para gestionar las cookies
+        //function aceptarCookies() {
+        //    document.getElementById("cookie-banner").style.display = "none";
+        //localStorage.setItem("cookies_aceptadas", "true");
+        //}
+
+        //// Ocultar si ya fueron aceptadas antes
+        //window.onload = function() {
+        //    if (localStorage.getItem("cookies_aceptadas")) {
+        //    document.getElementById("cookie-banner").style.display = "none";
+        //    }
+//};
+
+window.onload = function () {
+    // Mostrar el banner de cookies siempre
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptButton = document.getElementById("accept-cookies");
+
+    // Cuando el usuario acepta las cookies
+    acceptButton.addEventListener("click", function () {
+        cookieBanner.style.display = "none";
+    });
+
+    // Asegurarse de que se muestre cada vez que se recarga la página
+    cookieBanner.style.display = "block";  // siempre mostrarlo al cargar la página
+};
+   
