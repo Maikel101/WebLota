@@ -1,0 +1,126 @@
+﻿@model WebLota.Models.Producto
+
+<section class="container my-5">
+    <div class="row">
+        <!-- Columna de Imágenes -->
+        <div class="col-md-6">
+            <div class="d-flex flex-column gap-3">
+                <img src="~/Images/@Model.ImagenUrl" class="img-fluid rounded shadow" alt="Foto 1">
+                <img src="~/Images/@Model.ImagenUrl" class="img-fluid rounded shadow" alt="Foto 2">
+                <img src="~/Images/@Model.ImagenUrl" class="img-fluid rounded shadow" alt="Foto 3">
+                <img src="~/Images/@Model.ImagenUrl" class="img-fluid rounded shadow" alt="Foto 4">
+            </div>
+        </div>
+
+        <!-- Columna de Detalles -->
+        <div class="col-md-6">
+            <h1 class="mb-4 text-primary">@Model.Nombre</h1>
+            <h2 class="text-success mb-3">€@Model.Precio</h2>
+            <p class="text-muted mb-5">@Model.Descripcion</p>
+
+            <h5 class="mb-3">Colores:</h5>
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="colorOptions" id="option1">
+                <label class="form-check-label" for="option1">
+                    Edición limitada de 10 unidades
+                </label>
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="radio" name="colorOptions" id="option2">
+                <label class="form-check-label" for="option2">
+                    Lo quieres encargar? (plazo 5-10 días)
+                </label>
+            </div>
+
+            <h5 class="mt-4 mb-3">Descripción larga</h5>
+            <p class="mb-5">@Model.Descripcion</p>
+
+            <h5 class="mb-3">Medidas</h5>
+            <p class="mb-4">Introduce las medidas aquí.</p>
+
+            <!-- Información desplegable -->
+            <div class="accordion mb-5" id="infoAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Info envío
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <p>
+                                <strong>Métodos de Envio</strong><br /><br />
+                                Te enviamos tu pedido por correos con estas dos opciones:<br />
+                                Correo Ordinario que tarda entre 24h y 48h.<br />
+                                Correos Express que tarda entre 48 y 72h.<br />
+                                Ten en cuenta que los tiempos de entrega pueden variar según la ubicación.
+                            </p>
+                            <p>
+                                <strong>Costes de Envio</strong><br /><br />
+                                El costo del envío se calculará al momento de finalizar la compra, basado en el destino y el método elegido.<br />
+                                Ofrecemos envío gratuito en pedidos superiores a 120€.
+
+                            </p>
+                            <p>
+                                <strong>Problemas con el Envio</strong><br /><br />
+                                Si hay algún problema con la entrega, contáctanos a <strong>bolsoslot@gmail.com</strong> que estaremos encantados de ayudarte.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Política de devolución
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <p>
+                                En caso de querer devolver tu producto tienes un plazo de 14 días desde la recepción del mismo.<br />
+                                El artículo debe estar en su estado original y sin usar.<br />
+                                Escribe un email a <strong>bolsoslotagmail.com</strong> para solicitar tu devolución indicándonos tu nombre y apellidos, dirección de recogida, número de pedido, email y teléfono para que nos podamos contactar contigo y explicarte el proceso de devolución.<br />
+                                Los costos de envío de la devolución son responsabilidad del cliente, a menos que el producto esté defectuoso o haya un error en el envío.<br />
+                                Por supuesto te ayudaremos en todo lo que necesites durante el proceso de devolución.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Preorder
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <p>
+                                Nosotras hacemos una producción limitada porque nos gusta que nuestros productos sean únicos y personales.<br />
+                                Que el cliente pueda sentirse único sabiendo que sólo él y pocas personas más tendrán el mismo modelo de bolso.<br />
+                                Además, tenemos un sentimiento de sostenibilidad muy arraigado:<br />
+                                Queremos comprar las telas de manera limitada para no generar sobreproducción ni desperdicio.<br />
+                                Sólo tendremos en opción de pre order aquellos productos que más os gusten y podamos hacer más producción siempre y cuando el fabricante siga haciendo la misma tela.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center gap-3 mt-4">
+                <form asp-controller="Carrito" asp-action="Agregar" method="post" class="d-flex flex-column align-items-center">
+                    <input type="hidden" name="productoId" value="@Model.Id" />
+                    <label for="cantidad" class="fw-bold mb-1">Cantidad:</label>
+                    <input type="number" name="cantidad" id="cantidad" value="1" min="1" class="form-control text-center w-50" required />
+                    <button type="submit" class="btn btn-lg btn-primary btn-custom-style mt-2">Añadir al carrito</button>
+                </form>
+
+
+                <a href="@Url.Action("Store", "Store")" class="btn btn-lg btn-outline-secondary btn-custom-style mt-2">Volver a Tienda</a>
+            </div>
+
+        </div>
+    </div>
+</section>

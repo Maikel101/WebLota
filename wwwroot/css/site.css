@@ -397,3 +397,92 @@ footer {
     font-size: 0.9rem;
     cursor: pointer;
 }
+
+/* vista details */
+
+/* Estilo común para ambos botones */
+.btn-custom-style {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px; /* Bordes redondeados */
+    font-weight: 600; /* Peso de la fuente más fuerte */
+    text-align: center; /* Centrado de texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    /* margin-top: 10px;*/
+}
+
+    /* Hover para los botones */
+    .btn-custom-style:hover {
+        background-color: #0056b3; /* Color de fondo más oscuro en hover */
+        color: white; /* Texto blanco en hover */
+        transform: scale(1.05); /* Levele efecto de zoom en hover */
+    }
+
+    /* Estilo específico para el botón "Añadir al carrito" */
+    .btn-custom-style.btn-primary {
+        background-color: transparent; /* Fondo transparente */
+        color: #007bff; /* Texto azul */
+        border: 2px solid #007bff; /* Borde azul */
+    }
+
+        .btn-custom-style.btn-primary:hover {
+            background-color: #007bff; /* Fondo azul en hover */
+            color: white; /* Texto blanco en hover */
+        }
+
+    /* Estilo específico para el enlace "Volver a Tienda" */
+    .btn-custom-style.btn-outline-secondary {
+        background-color: transparent; /* Fondo transparente */
+        color: #007bff; /* Texto azul */
+        border: 2px solid #007bff; /* Borde azul */
+    }
+
+        /* Hover específico para el botón "Volver a Tienda" */
+        .btn-custom-style.btn-outline-secondary:hover {
+            background-color: #007bff; /* Fondo azul en hover */
+            color: white; /* Texto blanco en hover */
+        }
+
+.accordion {
+    margin-top: 30px; /* Asegura que el acordeón no se solape con otros elementos */
+}
+
+
+.accordion-item {
+    margin-bottom: 15px; /* Espacio entre las secciones del acordeón */
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    border-color: #ddd;
+}
+
+    .accordion-button:not(.collapsed) {
+        background-color: #e9ecef;
+    }
+
+.accordion-body {
+    background-color: #f1f1f1;
+}
+
+.d-flex {
+    justify-content: flex-end; /* Alinea todo el contenido del contenedor a la derecha */
+}
+
+.img-fluid {
+    transition: transform 0.3s ease;
+    width: 100%; /* Mantén el ancho al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 300px; /* Máximo ancho de la imagen */
+    max-height: 200px; /* Máxima altura de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    float: right;
+    margin-left: 100px;
+}
+
+    .img-fluid:hover {
+        transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Mayor sombra en hover */
+    }
