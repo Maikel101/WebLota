@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebLota.Models.Producto>
+
+
+<section class="hero">
+    <h2>
+        Somos dos amigas recién embarcadas en la ilusión de diseñar y hacer bolsos de tela que sean cómodos y elegantes. Buscamos telas de calidad y un acabado perfecto en cada bolso. Son de edición limitada y hechos a mano. Elegancia, sencillez, comodidad y amistad es lo que nos define.
+    </h2>
+</section>
+
+
+<section class="products container my-5">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var producto in Model)
+        {
+            <div class="col">
+                <div class="card product-card text-center">
+                    <a href="@Url.Action("Details", "Productos", new { id = producto.Id })" class="text-decoration-none">
+                        <img src="~/Images/@producto.ImagenUrl" class="card-img-top" alt="@producto.Nombre">
+                        <div class="card-body">
+                            <h5 class="card-title">@producto.Nombre</h5>
+                            <p class="card-text">Precio: €@producto.Precio</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</section>

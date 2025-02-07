@@ -354,3 +354,46 @@ footer {
         font-size: 14px;
         color: #fff; /* Texto blanco */
     }
+
+/* vista store */
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+    .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+        height: 150px;
+        /*width: 100%;*/ /* Asegurarse de que ocupe todo el ancho de la tarjeta */
+        /*object-fit: cover;*/ /* Ajustar la imagen sin distorsionar */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.1); /* Zoom al pasar el cursor */
+    }
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.card-text {
+    color: #777;
+    font-size: 0.9rem;
+    cursor: pointer;
+}

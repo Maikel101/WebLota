@@ -135,3 +135,4 @@ C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.pdb
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.genruntimeconfig.cache
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\ref\WebLota.dll
+C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.sourcelink.json
