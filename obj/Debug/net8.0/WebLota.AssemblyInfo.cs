@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebLota")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+606f0cf995271509a22f832ce8fcd386a5c07c41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64b6d22167444d9de35a2a5d69b24049815ffcec")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebLota")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebLota")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

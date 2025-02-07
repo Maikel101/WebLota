@@ -112,7 +112,7 @@
             <div class="d-flex flex-column align-items-center gap-3 mt-4">
                 <form asp-controller="Carrito" asp-action="Agregar" method="post" class="d-flex flex-column align-items-center">
                     <input type="hidden" name="productoId" value="@Model.Id" />
-                    <label for="cantidad" class="fw-bold mb-1">Cantidad:</label>
+                    <label for="cantidad" class="fw-bold mb-1">Cantidad:</label><br /><br />
                     <input type="number" name="cantidad" id="cantidad" value="1" min="1" class="form-control text-center w-50" required />
                     <button type="submit" class="btn btn-lg btn-primary btn-custom-style mt-2">Añadir al carrito</button>
                 </form>
