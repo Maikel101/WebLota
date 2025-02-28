@@ -74,15 +74,6 @@ function showNotification(message) {
     toastr.success(message);
 }
 
-//function actualizarCarrito() {
-//    fetch('/Carrito/GetCarritoCount')
-//        .then(response => response.text())
-//            .then(data => {
-//                document.getElementById('carrito-count').innerText = data;
-//            });
-//}
-//actualizarCarrito();
-
 function actualizarCarrito() {
     //Hacemos una petición al controlador para obtener el número de productos en el carrito
     fetch('/Carrito/Agregar', {
@@ -103,32 +94,36 @@ function actualizarCarrito() {
         });
 }
 
-        // Script para gestionar las cookies
-        //function aceptarCookies() {
-        //    document.getElementById("cookie-banner").style.display = "none";
-        //localStorage.setItem("cookies_aceptadas", "true");
-        //}
-
-        //// Ocultar si ya fueron aceptadas antes
-        //window.onload = function() {
-        //    if (localStorage.getItem("cookies_aceptadas")) {
-        //    document.getElementById("cookie-banner").style.display = "none";
-        //    }
-//};
-
-window.onload = function () {
-    // Mostrar el banner de cookies siempre
+// ==========================
+// BANNER DE COOKIES
+// ==========================
+document.addEventListener("DOMContentLoaded", function () {
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptButton = document.getElementById("accept-cookies");
 
-    // Cuando el usuario acepta las cookies
-    acceptButton.addEventListener("click", function () {
-        cookieBanner.style.display = "none";
-    });
+    // Verificar si ya se mostró el banner en esta sesión (si "cookiesAccepted" no está en sessionStorage)
+    if (!sessionStorage.getItem("cookiesAccepted")) {
+        cookieBanner.style.display = "block"; // Mostrar el banner si no se mostró antes en esta sesión
+    }
 
-    // Asegurarse de que se muestre cada vez que se recarga la página
-    cookieBanner.style.display = "block";  // siempre mostrarlo al cargar la página
-};
+    // Cuando el usuario hace clic en "Aceptar"
+    acceptButton.addEventListener("click", function () {
+        cookieBanner.style.display = "none"; // Ocultar el banner
+        sessionStorage.setItem("cookiesAccepted", "true"); // Guardar en sessionStorage que el banner fue aceptado
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
