@@ -45,7 +45,7 @@ header {
     width: 100%;
     border-bottom: 1px solid #eee;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     min-height: 70px;
 }
 
@@ -58,7 +58,7 @@ header {
         transition: transform 0.3s ease, filter 0.3s ease;
         display: inline-block;
         filter: grayscale(0);
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
 
         header h1:hover {
@@ -66,9 +66,9 @@ header {
             filter: grayscale(20%);
            }
 
-.logo {
+/*.logo {
     margin-right: auto;
-}
+}*/
 
 nav {
     display: flex;
@@ -103,10 +103,10 @@ nav {
 
 .social-icons {
     display: flex;
-    justify-content: flex-end; /* Alinea a la derecha */
-    align-items: center; /* Centra verticalmente */
-    gap: 10px; /* Espacio entre los íconos */
-    margin-left: auto;
+    justify-content: flex-start;   
+    align-items: center;   
+    gap: 15px;   
+    /*margin-left: 100px;*/
 }
 
     .social-icons a {
@@ -114,8 +114,8 @@ nav {
     }
 
     .social-icons img {
-        width: 70px; /* Tamaño uniforme */
-        height: 70px;
+        width: 35px;   
+        height: 35px;
         transition: transform 0.3s ease, filter 0.3s ease;
         filter: grayscale(0);
     }
@@ -125,12 +125,23 @@ nav {
             filter: grayscale(20%);
         }
 
-        .social-icons img.carrito {
+/*        .social-icons img.carrito {
             width: 40px;
             height: 40px;
-        }
+            filter: brightness(1.5);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }*/
 
-#carrito-count {
+        /*.social-icons img.instagram {
+            font-weight: bold;*/ /* Esta propiedad no afecta a las imágenes */
+            /*width: 80px;*/ /* Aumenta el tamaño para darle más peso visual */
+            /*height: 80px;
+            text-shadow: 12px 12px 8px rgba(0, 0, 0, 0.9);
+            transition: transform 0.3s ease, filter 0.3s ease;
+            border-radius: 50%;
+        }*/
+
+/*#carrito-count {
     position: absolute;
     top: 0;
     right: 0;
@@ -143,7 +154,7 @@ nav {
     border-radius: 50%;
     text-align: center;
     line-height: 20px;
-}
+}*/
 
 .hero {
     text-align: center;

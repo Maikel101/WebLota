@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "357NF4Q5l0cU97Dj5kQ74OqqiNhyXNlUjZu+tmgrTFI=",
+  "Hash": "1o8JzQL0fo36MsdeJnr4WJEe8JsDLyh/KWom8ty4jqY=",
   "Source": "WebLota",
   "BasePath": "_content/WebLota",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\carrito-de-compras.png",
+      "SourceId": "WebLota",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\",
+      "BasePath": "_content/WebLota",
+      "RelativePath": "Images/carrito-de-compras.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\carrito-de-compras.png"
+    },
+    {
       "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\cesta.png",
       "SourceId": "WebLota",
       "SourceType": "Discovered",
@@ -129,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Ig.png"
+    },
+    {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\instagram.png",
+      "SourceId": "WebLota",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\",
+      "BasePath": "_content/WebLota",
+      "RelativePath": "Images/instagram.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\instagram.png"
     },
     {
       "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\Lota.png",
@@ -281,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Tote_Lota.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\verificar.png",
+      "SourceId": "WebLota",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\",
+      "BasePath": "_content/WebLota",
+      "RelativePath": "Images/verificar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\verificar.png"
     },
     {
       "Identity": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\Whatssup.png",

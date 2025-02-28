@@ -45,8 +45,20 @@
       "PackagePath": "staticwebassets\\Images\\Whatssup.png"
     },
     {
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\carrito-de-compras.png",
+      "PackagePath": "staticwebassets\\Images\\carrito-de-compras.png"
+    },
+    {
       "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\cesta.png",
       "PackagePath": "staticwebassets\\Images\\cesta.png"
+    },
+    {
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\instagram.png",
+      "PackagePath": "staticwebassets\\Images\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\Images\\verificar.png",
+      "PackagePath": "staticwebassets\\Images\\verificar.png"
     },
     {
       "Id": "C:\\Users\\migue\\OneDrive\\Escritorio\\PROYECTOS\\PROYECTOS 2024\\WebLota\\WebLota\\wwwroot\\css\\site.css",
