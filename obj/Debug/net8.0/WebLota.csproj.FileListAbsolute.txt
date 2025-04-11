@@ -119,6 +119,7 @@ C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.RazorAssemblyInfo.cache
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.RazorAssemblyInfo.cs
+C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.sourcelink.json
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\staticwebassets\msbuild.WebLota.Microsoft.AspNetCore.StaticWebAssets.props
@@ -135,4 +136,3 @@ C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.pdb
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.genruntimeconfig.cache
 C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\ref\WebLota.dll
-C:\Users\migue\OneDrive\Escritorio\PROYECTOS\PROYECTOS 2024\WebLota\WebLota\obj\Debug\net8.0\WebLota.sourcelink.json

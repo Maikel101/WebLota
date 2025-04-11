@@ -114,6 +114,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// ==========================
+// TOOLTIP INDEX
+// ==========================
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleccionar todos los elementos con el tooltip
+    const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    tooltips.forEach(function (tooltip) {
+        // Elegir una posición aleatoria de un array
+        const positions = ['top', 'bottom', 'left', 'right'];
+        const randomPosition = positions[Math.floor(Math.random() * positions.length)];
+
+        // Establecer la posición aleatoria en el tooltip
+        tooltip.setAttribute('data-bs-placement', randomPosition);
+
+        // Inicializar el tooltip
+        new bootstrap.Tooltip(tooltip);
+    });
+});
 
 
 
@@ -126,4 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-   
+
+
+
+
+
