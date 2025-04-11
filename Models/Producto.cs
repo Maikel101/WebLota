@@ -12,12 +12,17 @@ namespace WebLota.Models
         [StringLength(100)]
         public string Nombre { get; set; }
 
-        [StringLength(500)]
+        [StringLength(800)]
         public string Descripcion { get; set; }
+
+        [StringLength(250)]
+        public string BreveDescripcion { get; set; }
 
         [Range(0.01, double.MaxValue, ErrorMessage = "El precio debe ser mayor que 0.")]
         [Required]
         public decimal Precio { get; set; }
+
+        public string Color { get; set; }
 
         [StringLength(500)]
         public string ImagenUrl { get; set; }
